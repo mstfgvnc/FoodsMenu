@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#251919"
+    tools:context=".ui.MainActivity"
+    android:orientation="vertical"
+   >
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/ssss"/>
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+
+       >
+
+
+       <androidx.fragment.app.FragmentContainerView xmlns:android="http://schemas.android.com/apk/res/android"
+           android:id="@+id/fragmentContainerView"
+           android:name="com.mustafaguvenc.foodmenu.ui.MenuFragment"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           />
+
+
+
+   </RelativeLayout>
+
+
+
+</LinearLayout>
